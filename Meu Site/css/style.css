@@ -55,7 +55,6 @@ body{
     color:white ;
     background-color: #19CF16;
     border-radius: 10px;
-    margin-right: 30px;
  }
 
 /* BARRA DE NAVEGAÇÃO */
@@ -100,6 +99,13 @@ header, .navbar{
 
 #card-capa{
     padding: 70px 70px 0px 70px;
+}
+
+#capa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
 }
 
 #bv{
@@ -419,12 +425,31 @@ footer p{
 /* FIM DO SITE & INICIO MOBILE */
 
 @media (max-width: 503px) {
+
     
     .navbar.navbar-expand-lg {
         height: 100%;
         display: block;
         text-align: center;
+
     }
+    .nav-item.nav-link#contrate-menu {
+        color: white;
+        background-color: #19CF16;
+        border-radius: 10px;
+        margin: 0;
+    }
+    
+    .navbar-brand {
+        padding-top: var(--bs-navbar-brand-padding-y);
+        padding-bottom: var(--bs-navbar-brand-padding-y);
+        margin-right: 0;
+        font-size: var(--bs-navbar-brand-font-size);
+        color: var(--bs-navbar-brand-color);
+        text-decoration: none;
+        white-space: nowrap;
+    }
+
     
 
     .navbar.navbar-expand-lg .navbar-nav{
@@ -454,11 +479,7 @@ footer p{
         display: none;
     }
 
-    div#capa{
-        background-image: url("/Meu Site/src/fundo site.png");
-        background-size: 500px;
-        background-repeat: no-repeat;
-    }
+    
     #b1,#b2{
         font-size: 10px;
         padding: 5px 10px;
@@ -537,12 +558,7 @@ footer p{
         display: none;
     }
 
-    div#capa{
-        background-image: url("/Meu Site/src/fundo720.png");
-        background-position: center;
-        background-size: auto;
-        background-repeat: no-repeat;
-    }
+   
     #b1,#b2{
         font-size: 10px;
         padding: 5px 10px;
