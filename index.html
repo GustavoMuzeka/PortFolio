@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Gustavo</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <!--Botão whatsapp-->
+    <a href="https://api.whatsapp.com/send/?phone=541988335224" target="_blank">
+      <div class="btn-whatsapp pulsaDelay"><ion-icon name="logo-whatsapp"></ion-icon></div>
+      </a>
+  <!--Botão whatsapp-->
+      
+    <nav id="desktop-nav">
+      <div class="logo">Gustavo Muzeka</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#experience">Experiências</a></li>
+          <li><a href="#projects">Projetos</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Gustavo</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">Sobre</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experiência</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projetos</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contato</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Olá, Eu sou</p>
+        <h1 class="title">Gustavo Muzeka</h1>
+        <p class="section__text__p2">FullStack Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/GUSTAVOMUZEKA-2023.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" target="_blank"  onclick="location.href='https://api.whatsapp.com/send/?phone=541988335224'">
+            Fale Comigo
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            target="_blank" onclick="location.href='https://www.linkedin.com/in/gustavo-muzeka/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            target="_blank"  onclick="location.href='https://github.com/GustavoMuzeka'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Saiba mais</p>
+      <h1 class="title">Sobre mim</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experiência</h3>
+              <p>4 anos<br/>Suporte/Líder TI</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Graduação</h3>
+              <p>Análise e Desenvolvimento de Sistemas<br>Cursando<br>UNOPAR</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Sou criativo, auto motivado e fascinado por inovação e tecnologia. Estou sempre em 
+              busca de novos conhecimentos me considero bastante autodidata.
+              Consigo obter soluções para problemas com facilidade e perceber oportunidades de 
+              evolução e inovação para sistemas já implementados.
+              Habilidades interpessoais e conhecimentos diversificados são meus principais 
+              diferenciais.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore Minha</p>
+      <h1 class="title">Experiência</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML5/CSS3</h3>
+                  <p>Avançado</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Javascript</h3>
+                  <p>Intermediário</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SASS/SCSS</h3>
+                  <p>Intermediário</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JQuery</h3>
+                  <p>Básico</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Bootstrap</h3>
+                  <p>Básico</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>WordPress</h3>
+                  <p>Avançado</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MySQL</h3>
+                  <p>Básico</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Básico</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Cursando</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Básico</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Veja alguns</p>
+      <h1 class="title">Projetos</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <video controls loop autoplay class="project-img">
+                <source src="/assets/project-1.mp4" type="video/mp4">
+                
+              </video>
+            </div>
+            <h2 class="experience-sub-title project-title">Projeto Pizzaria</h2>
+            <p>Projeto feito utilizando HTML, CSS, Javascript, JQUERY e Bootstrap.</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                target="_blank"  onclick="location.href='https://github.com/GustavoMuzeka/Projeto-Pizzaria'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                target="_blank"  onclick="location.href='https://fontenelle-pizzaria.netlify.app/'"
+              >
+                Veja ONLINE
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <video controls loop autoplay class="project-img">
+                <source src="/assets/project-2.mp4" type="video/mp4">
+                
+              </video>
+            </div>
+            <h2 class="experience-sub-title project-title">Pokedéx API</h2>
+            <p>Projeto feito utilizando HTML CSS JAVASCRIPT, com foco total no Javascript, utilizando requisições na API</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                target="_blank"  onclick="location.href='https://github.com/GustavoMuzeka/Projeto-Pokedex-API'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                target="_blank"  onclick="location.href='https://pokedexgustavo1.netlify.app/'"
+              >
+                Veja ONLINE
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <video controls loop autoplay class="project-img">
+                <source src="/assets/project-3.mp4" type="video/mp4">
+                
+              </video>
+            </div>
+            <h2 class="experience-sub-title project-title">Landing Page AUTOCAD</h2>
+            <p>Projeto feito utilizando HTML e CSS </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                target="_blank"  onclick="location.href='https://github.com/GustavoMuzeka/Projeto-AUTOCAD'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                target="_blank"   onclick="location.href='https://aecarquitetura.tech/'"
+              >
+                Veja ONLINE
+              </button>
+              
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <video controls loop autoplay class="project-img">
+              <source src="/assets/project-4.mp4" type="video/mp4">
+              
+            </video>
+            </div>
+            <h2 class="experience-sub-title project-title">Réplica Tétris</h2>
+            <p>Projeto feito utilizando apenas HTML, CSS e Javascript.</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                target="_blank" onclick="location.href='https://github.com/GustavoMuzeka/Projeto-Tetris'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                target="_blank"  onclick="location.href='https://tetrismaster.netlify.app/'"
+              >
+                Veja ONLINE
+              </button>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">A um toque de distância</p>
+      <h1 class="title">Entre em Contato!</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a target="_blank" href="mailto:muzeka89@gmail.com">muzeka89@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a target="_blank" href="https://www.linkedin.com">Linkedin</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#experience">Experiência</a></li>
+            <li><a href="#projects">Projetos</a></li>
+            <li><a href="#contact">Contato</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Gustavo Muzeka.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</html>
